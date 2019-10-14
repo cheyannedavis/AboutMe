@@ -10,7 +10,7 @@ namespace CDavisAboutMe
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage()); //lets you navigate between pages new NavigationPage()
         }
 
         protected override void OnStart()
