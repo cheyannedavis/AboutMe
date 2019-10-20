@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="My Bio App"
+             BackgroundImageSource=""
              x:Class="CDavisAboutMe.MainPage">
 
     <StackLayout>
