@@ -17,10 +17,10 @@
             </Grid.ColumnDefinitions>
             
             <Grid.RowDefinitions>
-                <RowDefinition Height="140"/>
-                <RowDefinition Height="140"/>
-                <RowDefinition Height="140"/>
-                <RowDefinition Height="140"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             
             <Label
@@ -35,42 +35,49 @@
 
             </Label>
 
-            <Label
+            <Button 
+                BackgroundColor="Black"
+                CornerRadius="50"
+                HeightRequest="50"
                 Text="About Me"
                 HorizontalOptions="Center"
                 FontSize="Small"
                 TextColor="White"
                 Grid.Row="1"
-                Grid.Column="0">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
+                Grid.Column="0"
+                WidthRequest="120"
+                Clicked="AboutMeButton_Clicked">
+                
+            </Button>
 
-            <Label
+            <Button
+                BackgroundColor="Black"
+                CornerRadius="50"
+                HeightRequest="50"
+                WidthRequest="100"
                 Text="Skills"
                 HorizontalOptions="Center"
                 FontSize="Small"
                 TextColor="White"
                 Grid.Row="2"
-                Grid.Column="1">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
+                Grid.Column="1"
+                Clicked="SkillsButton_Clicked">
+            </Button>
 
-            <Label
+            <Button
+                BackgroundColor="Black"
+                CornerRadius="50"
+                HeightRequest="50"
+                WidthRequest="100"
                 Text="Contact"
                 HorizontalOptions="Center"
                 VerticalOptions="Start"
                 FontSize="Small"
                 TextColor="White"
                 Grid.Row="3"
-                Grid.Column="0">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
+                Grid.Column="0"
+                Clicked="ContactButton_Clicked">
+            </Button>
         </Grid>
     </StackLayout>
 
