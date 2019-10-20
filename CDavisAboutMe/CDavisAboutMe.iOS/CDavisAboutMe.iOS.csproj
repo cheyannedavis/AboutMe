@@ -130,4 +130,10 @@
       <Name>CDavisAboutMe</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PinkGrey.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Black.png" />
+  </ItemGroup>
 </Project>

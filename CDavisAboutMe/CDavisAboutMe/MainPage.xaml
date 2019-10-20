@@ -4,15 +4,76 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="My Bio App"
-             BackgroundImageSource=""
+             BackgroundImageSource="PinkGrey.PNG"
              x:Class="CDavisAboutMe.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Cheyanne Davis" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout
+        Margin="20">
+       
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+            </Grid.RowDefinitions>
+            
+            <Label
+                Text="Cheyanne Davis"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+
+            </Label>
+
+            <Label
+                Text="About Me"
+                HorizontalOptions="Center"
+                FontSize="Small"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label
+                Text="Skills"
+                HorizontalOptions="Center"
+                FontSize="Small"
+                TextColor="White"
+                Grid.Row="2"
+                Grid.Column="1">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label
+                Text="Contact"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                FontSize="Small"
+                TextColor="White"
+                Grid.Row="3"
+                Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
     </StackLayout>
 
 </ContentPage>
+
+    
