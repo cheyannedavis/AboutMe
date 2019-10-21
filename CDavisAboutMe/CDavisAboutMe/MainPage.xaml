@@ -9,76 +9,59 @@
 
     <StackLayout
         Margin="20">
-       
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            
-            <Label
-                Text="Cheyanne Davis"
-                HorizontalOptions="Center"
-                FontAttributes="Bold"
-                FontSize="Medium"
-                TextColor="White"
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2">
 
-            </Label>
+        <Button
+                BackgroundColor="Black"
+                CornerRadius="115"
+                HeightRequest="150"
+                WidthRequest="250"
+                Text="Cheyanne Davis"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="White">
+        </Button>
 
             <Button 
                 BackgroundColor="Black"
-                CornerRadius="50"
-                HeightRequest="50"
+                CornerRadius="100"
+                HeightRequest="100"
                 Text="About Me"
-                HorizontalOptions="Center"
-                FontSize="Small"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Medium"
                 TextColor="White"
-                Grid.Row="1"
-                Grid.Column="0"
-                WidthRequest="120"
+                WidthRequest="200"
                 Clicked="AboutMeButton_Clicked">
                 
             </Button>
 
             <Button
                 BackgroundColor="Black"
-                CornerRadius="50"
-                HeightRequest="50"
-                WidthRequest="100"
+                CornerRadius="115"
+                HeightRequest="125"
+                WidthRequest="225"
                 Text="Skills"
-                HorizontalOptions="Center"
-                FontSize="Small"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Medium"
                 TextColor="White"
-                Grid.Row="2"
-                Grid.Column="1"
                 Clicked="SkillsButton_Clicked">
             </Button>
 
-            <Button
+        <Button
                 BackgroundColor="Black"
-                CornerRadius="50"
-                HeightRequest="50"
-                WidthRequest="100"
+                CornerRadius="100"
+                HeightRequest="115"
+                WidthRequest="215"
                 Text="Contact"
-                HorizontalOptions="Center"
-                VerticalOptions="Start"
-                FontSize="Small"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="EndAndExpand"
+                FontSize="Medium"
                 TextColor="White"
-                Grid.Row="3"
-                Grid.Column="0"
                 Clicked="ContactButton_Clicked">
-            </Button>
-        </Grid>
+        </Button>
     </StackLayout>
 
 </ContentPage>
