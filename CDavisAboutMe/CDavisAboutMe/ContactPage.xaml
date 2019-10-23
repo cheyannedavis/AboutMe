@@ -4,12 +4,111 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundImageSource="PinkGrey.PNG"
              x:Class="CDavisAboutMe.ContactPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to my Contact Page !"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="10">
+            <Label
+                Text="Name"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center">
+            </Label>
+            <Frame
+                Margin="20,5,20,20"
+                BackgroundColor="Black"
+                CornerRadius="115"
+                HeightRequest="40"
+                WidthRequest="200"
+                HorizontalOptions="Center">
+                <Entry
+                       BackgroundColor="Black"
+                       Placeholder="Name"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"/>
+            </Frame>
+            <Label
+                Text="Phone Number"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center">
+            </Label>
+            <Frame
+                Margin="20,5,20,20"
+                BackgroundColor="Black"
+                CornerRadius="115"
+                HeightRequest="40"
+                WidthRequest="200"
+                HorizontalOptions="Center">
+                <Entry
+                       BackgroundColor="Black"
+                       Placeholder="Name"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"/>
+            </Frame>
+            <Label
+                Text="Email"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center">
+            </Label>
+            <Frame
+                Margin="20,5,20,20"
+                BackgroundColor="Black"
+                CornerRadius="115"
+                HeightRequest="40"
+                WidthRequest="200"
+                HorizontalOptions="Center">
+                <Entry
+                       BackgroundColor="Black"
+                       Placeholder="Name"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"/>
+            </Frame>
+            <Label
+                Text="Question"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center">
+            </Label>
+            <Frame
+                Margin="20,5,20,20"
+                BackgroundColor="Black"
+                CornerRadius="115"
+                HeightRequest="40"
+                WidthRequest="200"
+                HorizontalOptions="Center">
+                <Entry
+                       BackgroundColor="Black"
+                       Placeholder="Name"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"/>
+            </Frame>
+            <Button
+                Margin="5,20,5,5"
+                BackgroundColor="Black"
+                Text="Submit"
+                FontSize="Small"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                HeightRequest="75"
+                WidthRequest="125"
+                HorizontalOptions="End">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
