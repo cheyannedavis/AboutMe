@@ -25,6 +25,7 @@
                 WidthRequest="200"
                 HorizontalOptions="Center">
                 <Entry
+                        x:Name="nameEntry"
                        BackgroundColor="Black"
                        Placeholder="Name"
                        TextColor="White"
@@ -47,8 +48,9 @@
                 WidthRequest="200"
                 HorizontalOptions="Center">
                 <Entry
+                       x:Name="phoneNumberEntry"
                        BackgroundColor="Black"
-                       Placeholder="Name"
+                       Placeholder="Phone Number"
                        TextColor="White"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="Center"/>
@@ -69,8 +71,9 @@
                 WidthRequest="200"
                 HorizontalOptions="Center">
                 <Entry
+                       x:Name="emailEntry"
                        BackgroundColor="Black"
-                       Placeholder="Name"
+                       Placeholder="Email"
                        TextColor="White"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="Center"/>
@@ -91,8 +94,9 @@
                 WidthRequest="200"
                 HorizontalOptions="Center">
                 <Entry
+                       x:Name="questionEntry"
                        BackgroundColor="Black"
-                       Placeholder="Name"
+                       Placeholder="Question"
                        TextColor="White"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="Center"/>
@@ -107,7 +111,8 @@
                 CornerRadius="100"
                 HeightRequest="75"
                 WidthRequest="125"
-                HorizontalOptions="End">
+                HorizontalOptions="End"
+                Clicked="Button_Clicked_1">
             </Button>
         </StackLayout>
     </ContentPage.Content>

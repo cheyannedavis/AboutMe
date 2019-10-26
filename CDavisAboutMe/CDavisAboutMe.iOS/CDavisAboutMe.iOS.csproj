@@ -136,4 +136,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Black.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bio1.jpg" />
+  </ItemGroup>
 </Project>

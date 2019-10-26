@@ -7,10 +7,38 @@
              BackgroundImageSource="PinkGrey.PNG"
              x:Class="CDavisAboutMe.Page1">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to my Bio!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="25">
+            <Frame
+                BackgroundColor="Black"
+                CornerRadius="115"
+                HorizontalOptions="StartAndExpand"
+                HeightRequest="125"
+                WidthRequest="175">
+                <Label Text="About Me"
+                       TextColor="White"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame
+                CornerRadius="115"
+                HorizontalOptions="EndAndExpand"
+                BackgroundColor="Black">
+                <Image
+                    Source="bio1.jpg"
+                    HeightRequest="175"
+                    WidthRequest="175"
+                    HorizontalOptions="End">
+                </Image>
+            </Frame>
+            <Frame
+                BackgroundColor="White"
+                HorizontalOptions="Center">
+                <Label
+                    Text="I am a senior and this is my last semester at PSU. I am from Seneca, KS where I lived on a ranch for my entire life prior to college. I have three siblings, and I am the youngest. I love technology, hence my major at PSU. My greatest passion however is reading. I spend most of my spare time reading when I am not swamped with homework. I love my dogs and spending time with my sisters. After graduation, I hope to find a data analyst position in a city near my sisters. I look forward to living with my dog Daisy again and having much more free time. My fall back career is to get my masters in library science and become a librarian. ">
+                </Label>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
