@@ -15,11 +15,11 @@
                 HorizontalOptions="StartAndExpand"
                 HeightRequest="125"
                 WidthRequest="175">
-                <Label Text="About Me"
+                <Label Text="Cheyanne Davis"
                        TextColor="White"
                        FontSize="Large"
                        HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"/>
+                       VerticalTextAlignment="Center" FontAttributes="Italic"/>
             </Frame>
             <Frame
                 CornerRadius="115"
