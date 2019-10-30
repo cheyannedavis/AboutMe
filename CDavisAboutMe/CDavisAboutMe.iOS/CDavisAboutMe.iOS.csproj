@@ -139,4 +139,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\bio1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\microsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mindmap.png" />
+  </ItemGroup>
 </Project>

@@ -4,12 +4,73 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundImageSource="PinkGrey.PNG"
              x:Class="CDavisAboutMe.SkillsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to my Skills page !!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="20">
+            <Frame
+                BackgroundColor="White"
+                CornerRadius="115"
+                HorizontalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="150">
+                <Label Text="Skills"
+                       TextColor="Black"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame 
+                BackgroundColor="White"
+                CornerRadius="100"
+                HorizontalOptions="StartAndExpand"
+                HeightRequest="50"
+                WidthRequest="50">
+            </Frame>
+            <StackLayout
+                Margin="20">
+                <Frame
+                BackgroundColor="White"
+                CornerRadius="120"
+                HorizontalOptions="Center"
+                VerticalOptions="EndAndExpand"
+                HeightRequest="300"
+                WidthRequest="300">
+                <ListView x:Name="skillsList" 
+                          HasUnevenRows="True"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                    Margin="20"
+                                    Spacing="15"
+                                    HorizontalOptions="Center"
+                                    Orientation="Horizontal">
+                                    <Image
+                                        Margin="10,0,0,0"
+                                        HeightRequest="50"
+                                        HorizontalOptions="End"
+                                        Source="{Binding Icon}"
+                                        WidthRequest="50" >
+                                    </Image>
+                                    <Label
+                                        FontSize="Medium"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalOptions="Center"
+                                        Text="{Binding Name}"
+                                        TextColor="Black">
+                                    </Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </Frame>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
